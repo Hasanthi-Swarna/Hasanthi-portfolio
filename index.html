@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasanthi Swarna - Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #f093fb;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f0f1e;
+            color: #fff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Background */
+        .bg-animation {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(45deg, #0f0f1e, #1a1a2e, #0f0f1e);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%,100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, rgba(102,126,234,0.9), rgba(118,75,162,0.9));
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 1.5rem;
+            border: 4px solid rgba(255,255,255,0.6);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            max-width: 720px;
+            margin: 0 auto 2rem;
+            font-size: 1.15rem;
+            opacity: 0.95;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.7rem 1.4rem;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Nav */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(26,26,46,0.95);
+            padding: 1rem;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Cards */
+        .glass {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        /* Skills & Projects */
+        .skills-grid,
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(26,26,46,0.95);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.3rem; }
+            header p { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="bg-animation"></div>
+
+<header>
+    <img src="Profile.jpeg" alt="Hasanthi Swarna" class="profile-img">
+    <h1>Hasanthi Swarna</h1>
+    <p>Building user-focused products at the intersection of technology, leadership, and execution.</p>
+
+    <div class="contact-links">
+        <a href="mailto:hasanthiswarna517@gmail.com">📧 Email</a>
+        <a href="tel:+917732011999">📱 Call</a>
+        <a href="https://linkedin.com/in/hasanthi-swarna" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/Hasanthi-Swarna" target="_blank">🚀 GitHub</a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="glass">
+        <p>I’m a Computer Science undergraduate at VIT-AP who enjoys working beyond just writing code. I like understanding problems, coordinating people, and building products that actually get used.</p>
+        <p>Through projects, and leading technical communities, I’ve worked at the intersection of development, decision-making, and execution. I’m currently exploring roles in product, development, and business where I can own outcomes end-to-end.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="glass">
+            <h3>Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Dart</li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Web & Mobile</h3>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Flutter</li>
+                <li>React (Basics)</li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Tools & Concepts</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Firebase</li>
+                <li>DBMS, SDLC, MVC/MVVM</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="glass">
+            <h3>Task Manager App</h3>
+            <ul>
+                <li><strong>Impact:</strong> Improved personal task tracking and organization</li>
+                <li>Built using Flutter with MVVM architecture</li>
+                <li>Implemented authentication and CRUD features</li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Expense Calculator (Flutter)</h3>
+            <ul>
+                <li>Mobile app for daily expense tracking</li>
+                <li>Dashboard, login, and transaction flow</li>
+            </ul>
+        </div>
+
+        <div class="glass">
+            <h3>Secure Package Reception Box</h3>
+            <ul>
+                <li>Top 10 project at VIT-AP Engineering Clinics Expo</li>
+                <li>Focused on real-world theft prevention</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="leadership">
+    <h2>Leadership</h2>
+    <div class="glass">
+        <h3>NextGen Cloud Club – VIT-AP</h3>
+        <ul>
+            <li>Ex-President & Vice Chief Advisor</li>
+            <li>Organized 20+ events for 500+ students</li>
+            <li>Led club to Best Technical Club award</li>
+        </ul>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="glass">
+        <p><strong>B.Tech – Computer Science</strong></p>
+        <p>VIT-AP | CGPA: 8.06</p>
+    </div>
+</section>
+
+<section id="achievements">
+    <h2>Achievements</h2>
+    <div class="glass">
+        <ul>
+            <li>Top 10 – Engineering Clinics Expo 2023-24</li>
+            <li>Best Technical Club – NextGen Cloud Club</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Hasanthi Swarna</p>
+</footer>
+
+</body>
+</html>
